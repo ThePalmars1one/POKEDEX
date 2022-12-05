@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #3B5DA8;
+}
+
+@font-face {
+  font-family: "Gamer";
+  src: url("./assets/fonts/Gamer.ttf");
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.footer_img {
+  margin-right: 3rem;
+}/*# sourceMappingURL=footer.component.css.map */
