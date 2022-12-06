@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SearchscriptService } from 'src/app/service/searchscript.service';
 
 @Component({
   selector: 'app-pokemones',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./pokemones.component.css']
 })
 export class PokemonesComponent {
+
+  constructor(private searchService: SearchscriptService) {
+    this.searchService.loadScript();
+  }
 
 }

@@ -1,7 +1,17 @@
-<div class="pokemones">
-    <div>
-        <input type="text">
-
+<form action="" onsubmit="searchPokemon(event)">
+    <input type="text" name="pokemon" autocomplete="off">
+    <button type="submit"> BUSCAR </button>
+</form>
+<div data-poke-card class="poke-card">
+    <div data-poke-name>Pokedex</div>
+    <div data-poke-img-container class="img-container">
+        <img data-poke-img class="poke-img" src="./assets/img/pokebola.svg">
     </div>
-
+    <div data-poke-id></div>
+    <div data-poke-hp></div>
+    <div data-poke-att></div>
+    <div data-poke-weight></div>
+    <div data-poke-types class="poke-types"></div>
+    <div data-poke-stats class="poke-stats"></div>
+    
 </div>
