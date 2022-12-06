@@ -1,17 +1,27 @@
-<form action="" onsubmit="searchPokemon(event)">
+<form action="" onsubmit="searchPokemon(event)" class="poke_form">
     <input type="text" name="pokemon" autocomplete="off">
     <button type="submit"> BUSCAR </button>
 </form>
-<div data-poke-card class="poke-card">
-    <div data-poke-name>Pokedex</div>
-    <div data-poke-img-container class="img-container">
-        <img data-poke-img class="poke-img" src="./assets/img/pokebola.svg">
+<div data-poke-card class="poke_card">
+    <div class="poke_id">
+        <h2 data-poke-name>Pokedex</h2>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke_img" src="./assets/img/pokebola_buscador.png">
+        </div>
+        <h2 data-poke-id></h2>
     </div>
-    <div data-poke-id></div>
-    <div data-poke-hp></div>
-    <div data-poke-att></div>
-    <div data-poke-weight></div>
-    <div data-poke-types class="poke-types"></div>
-    <div data-poke-stats class="poke-stats"></div>
-    
+    <div class="poke_stats">
+        <div class="poke_weight">
+            <img alt="heavy" src="./assets/img/heavy.svg" data-poke-weight-img>
+            <h2 data-poke-weight></h2>
+        </div>
+        <div class="poke_height">
+            <img src="./assets/img/rule.svg" alt="height" data-poke-height-img>
+            <h2 data-poke-height></h2>
+
+        </div>
+
+        <h2 data-poke-types class="poke_types"></h2>
+        <h2 data-poke-stats></h2>
+    </div>
 </div>

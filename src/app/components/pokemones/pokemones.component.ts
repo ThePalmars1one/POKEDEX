@@ -4,7 +4,7 @@ import { SearchscriptService } from 'src/app/service/searchscript.service';
 @Component({
   selector: 'app-pokemones',
   templateUrl: './pokemones.component.html',
-  styleUrls: ['./pokemones.component.css']
+  styleUrls: ['./pokemones.component.sass']
 })
 export class PokemonesComponent {
 

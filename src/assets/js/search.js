@@ -6,26 +6,29 @@ const pokeId = document.querySelector('[data-poke-id]');
 const pokeTypes = document.querySelector('[data-poke-types]');
 const pokeStats = document.querySelector('[data-poke-stats]');
 const pokeWeight = document.querySelector('[data-poke-weight]');
-const pokeHP = document.querySelector('[data-poke-hp]');
-const pokeAtt = document.querySelector('[data-poke-att]');
+const pokeHeight = document.querySelector('[data-poke-height]');
+const pokewImg = document.querySelector('[data-poke-weight-img]');
+const pokehImg = document.querySelector('[data-poke-height-img]');
 
 const typeColors = {
-    electric: '#FFEA70',
-    normal: '#B09398',
-    fire: '#FF675C',
-    water: '#0596C7',
-    ice: '#AFEAFD',
-    rock: '#999799',
-    flying: '#7AE7C7',
-    grass: '#4A9681',
-    psychic: '#FFC6D9',
-    ghost: '#561D25',
-    bug: '#A2FAA3',
-    poison: '#795663',
-    ground: '#D2B074',
-    dragon: '#DA627D',
-    steel: '#1D8A99',
-    fighting: '#2F2F2F',
+    electric: '#F3F802',
+    normal: '#36EFE4',
+    fire: '#F9620D',
+    water: '#366AEF',
+    ice: '#98D8D8',
+    rock: '#85752E',
+    fairy: '#DA3CDD',
+    flying: '#D587FA',
+    grass: '#78C850',
+    psychic: '#F85888',
+    ghost: '#4F2861',
+    bug: '#05CA77',
+    poison: '#CAEF36',
+    ground: '#EFBB36',
+    dragon: '#8736EF',
+    steel: '#807870',
+    fighting: '#C03028',
+    dark: '#252424',
     default: '#2A1A1F',
 };
 
@@ -45,16 +48,13 @@ const renderPokemonData = data => {
 
     pokeName.textContent = data.name;
     pokeImg.setAttribute('src', sprite);
-    pokeId.textContent = `Nº ${data.id}`;
-    pokeWeight.textContent = `Peso: ${data.weight}`;
-    pokeHP.textContent = `Salud: ${data.stats[0].base_stat}`;
-    pokeHP.textContent = `Ataque: ${data.stats[1].base_stat}`;
-    //setCardColor(types); //COLOR FONDO TARJETA
+    pokeId.textContent = `N° ${data.id}`;
+    pokewImg.style.display = "block";
+    pokeWeight.textContent = `${data.weight}`;
+    pokehImg.style.display = "block";
+    pokeHeight.textContent = `${data.height}`;
     renderPokemonTypes(types);
-    //renderPokemonStats(stats);
 }
-
-
 
 const renderPokemonTypes = types => {
     pokeTypes.innerHTML = '';
@@ -62,33 +62,21 @@ const renderPokemonTypes = types => {
         const typeTextElement = document.createElement("div");
         //typeTextElement.style.color = typeColors[type.type.name]; //DA EL COLOR AL TIPO
         typeTextElement.style.background = typeColors[type.type.name];
+        typeTextElement.style.padding = "5px 5px";
         typeTextElement.textContent = type.type.name; //DA EL TIPO DE POKEMON
         pokeTypes.appendChild(typeTextElement);
     });
 }
 
-const renderPokemonStats = stats => {
-    pokeStats.innerHTML = '';
-    stats.forEach(stat => {
-        const statElement = document.createElement("div");
-        const statElementName = document.createElement("div");
-        const statElementAmount = document.createElement("div");
-        statElementName.textContent = stat.stat.name;
-        statElementAmount.textContent = stat.base_stat;
-        statElement.appendChild(statElementName);
-        statElement.appendChild(statElementAmount);
-        pokeStats.appendChild(statElement);
-    });
-}
-
 const renderNotFound = () => {
     pokeName.textContent = 'No encontrado';
-    pokeImg.setAttribute('src', 'pokebola.png');
+    pokeImg.setAttribute('src', './assets/img/pokeball.png');
     pokeImg.style.background =  '#fff';
     pokeTypes.innerHTML = '';
     pokeStats.innerHTML = '';
     pokeId.textContent = '';
     pokeWeight.textContent = '';
-    pokeHP.textContent = '';
-    pokeAtt.textContent = '';
+    pokeHeight.textContent = '';
+    pokehImg.style.display = "none";
+    pokewImg.style.display = "none";
 }
