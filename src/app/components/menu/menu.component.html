@@ -1,12 +1,23 @@
-<div>
-    <img src="./assets/img/menu.svg" alt="" id="icon_menu">
+<div class="menu">
+    <button (click)="showTypes()" class="menu_button"> <img class="menu_icon" src="./assets/img/menu.svg" alt="" ></button>
 </div>
-<div id="poke_menu" class="active">
-    <ul>
-        <li>HOLA</li>
-        <li>HOLA</li>
-        <li>HOLA</li>
-        <li>HOLA</li>
-    </ul>
-
+<div *ngIf="show" class="menu_types">
+    <h2 class="bug">BUG</h2>
+    <h2 class="ghost">GHOST</h2>
+    <h2 class="poison">POISON</h2>
+    <h2 class="water">WATER</h2>
+    <h2 class="fairy">FAIRY</h2>
+    <h2 class="rock">ROCK</h2>
+    <h2 class="fighting">FIGHTING</h2>
+    <h2 class="fire">FIRE</h2>
+    <h2 class="steel">STEEL</h2>
+    <h2 class="psychic">PSYCHIC</h2>
+    <h2 class="ice">ICE</h2>
+    <h2 class="normal">NORMAL</h2>
+    <h2 class="dark">DARK</h2>
+    <h2 class="flying">FLYING</h2>
+    <h2 class="grass">GRASS</h2>
+    <h2 class="dragon">DRAGON</h2>
+    <h2 class="ground">GROUND</h2>
+    <h2 class="electric">ELECTRIC</h2>
 </div>
