@@ -9,7 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { TeamComponent } from './components/team/team.component';
 import { PokemonesComponent } from './components/pokemones/pokemones.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PokemonService } from './service/pokemon.service';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { PokemonService } from './service/pokemon.service';
     HomeComponent,
     TeamComponent,
     PokemonesComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

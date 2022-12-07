@@ -1,8 +1,131 @@
 <div class="myTeam">
-    <img class="myTeam_img"src="./assets/img/alejandro_pixel.svg" alt="Hero Alejandro">
+    <img class="myTeam_img" src="./assets/img/alejandro_pixel.svg" alt="Hero Alejandro">
     <div class="myTeam_title">
         <h2>MAESTRO</h2>
         <h2>ALEJANDRO <br>
-        PALMAR</h2>
+            PALMAR</h2>
+    </div>
+    <!-- PIKACHU -->
+    <div *ngFor="let pika of pikachu" class="myTeam_card">
+        <div class="myTeam_id">
+            <h2> {{pika.name}}</h2>
+            <div>
+                <img [src]="pika.sprites.front_default" alt="" class="myTeam_img_poke">
+            </div>
+            <h2> N° {{pika.id}}</h2>
+        </div>
+        <div class="myTeam_stats">
+            <div class="myTeam_weight">
+                <img alt="heavy" src="./assets/img/heavy.svg">
+                <h2> {{pika.weight}}</h2>
+            </div>
+            <div class="myTeam_height">
+                <img src="./assets/img/rule.svg" alt="height">
+                <h2> {{pika.height}}</h2>
+            </div>
+            <h2 class="myTeam_type pikachu"> {{pika.types[0].type.name}}</h2>
+            <h2> {{pika.types[1]?.type.name}}</h2>
+        </div>
+    </div>
+    <!-- CHARIZARD -->
+    <div *ngFor="let chari of charizard" class="myTeam_card">
+        <div class="myTeam_id">
+            <h2> {{chari.name}}</h2>
+            <img [src]="chari.sprites.front_default" alt="" class="myTeam_img_poke">
+            <h2> N° {{chari.id}}</h2>
+        </div>
+        <div class="myTeam_stats">
+            <div class="myTeam_weight">
+                <img alt="heavy" src="./assets/img/heavy.svg">
+                <h2> {{chari.weight}}</h2>
+            </div>
+            <div class="myTeam_height">
+                <img src="./assets/img/rule.svg" alt="height">
+                <h2> {{chari.height}}</h2>
+            </div>
+            <h2 class="myTeam_type charizard"> {{chari.types[0].type.name}}</h2>
+            <h2 class="myTeam_type charizard2"> {{chari.types[1]?.type.name}}</h2>
+        </div>
+    </div>
+    <!-- SQUIRTLE -->
+    <div *ngFor="let squi of squirtle" class="myTeam_card">
+        <div class="myTeam_id">
+            <h2> {{squi.name}}</h2>
+            <img [src]="squi.sprites.front_default" alt="" class="myTeam_img_poke">
+            <h2> N° {{squi.id}}</h2>
+        </div>
+        <div class="myTeam_stats">
+            <div class="myTeam_weight">
+                <img alt="heavy" src="./assets/img/heavy.svg">
+                <h2> {{squi.weight}}</h2>
+            </div>
+            <div class="myTeam_height">
+                <img src="./assets/img/rule.svg" alt="height">
+                <h2> {{squi.height}}</h2>
+            </div>
+            <h2 class="myTeam_type squirtle"> {{squi.types[0].type.name}}</h2>
+            <h2> {{squi.types[1]?.type.name}}</h2>
+        </div>
+    </div>
+    <!-- BEEDRILL -->
+    <div *ngFor="let bee of beedrill" class="myTeam_card">
+        <div class="myTeam_id">
+            <h2> {{bee.name}}</h2>
+            <img [src]="bee.sprites.front_default" alt="" class="myTeam_img_poke">
+            <h2> N° {{bee.id}}</h2>
+        </div>
+        <div class="myTeam_stats">
+            <div class="myTeam_weight">
+                <img alt="heavy" src="./assets/img/heavy.svg">
+                <h2> {{bee.weight}}</h2>
+            </div>
+            <div class="myTeam_height">
+                <img src="./assets/img/rule.svg" alt="height">
+                <h2> {{bee.height}}</h2>
+            </div>
+            <h2 class="myTeam_type beedrill"> {{bee.types[0].type.name}}</h2>
+            <h2 class="myTeam_type beedrill2"> {{bee.types[1]?.type.name}}</h2>
+        </div>
+    </div>
+    <!-- DIGLETT -->
+    <div *ngFor="let dig of diglett" class="myTeam_card">
+        <div class="myTeam_id">
+            <h2> {{dig.name}}</h2>
+            <img [src]="dig.sprites.front_default" alt="" class="myTeam_img_poke">
+            <h2> N° {{dig.id}}</h2>
+        </div>
+        <div class="myTeam_stats">
+            <div class="myTeam_weight">
+                <img alt="heavy" src="./assets/img/heavy.svg">
+                <h2> {{dig.weight}}</h2>
+            </div>
+            <div class="myTeam_height">
+                <img src="./assets/img/rule.svg" alt="height">
+                <h2> {{dig.height}}</h2>
+            </div>
+            <h2 class="myTeam_type diglett"> {{dig.types[0].type.name}}</h2>
+            <h2> {{dig.types[1]?.type.name}}</h2>
+        </div>
+    </div>
+    <!-- MACHOP -->
+    <div *ngFor="let mac of machop" class="myTeam_card">
+        <div class="myTeam_id">
+            <h2> {{mac.name}}</h2>
+            <img [src]="mac.sprites.front_default" alt="" class="myTeam_img_poke">
+            <h2> N° {{mac.id}}</h2>
+        </div>
+        <div class="myTeam_stats">
+            <div class="myTeam_weight">
+                <img alt="heavy" src="./assets/img/heavy.svg">
+                <h2> {{mac.weight}}</h2>
+            </div>
+            <div class="myTeam_height">
+                <img src="./assets/img/rule.svg" alt="height">
+                <h2> {{mac.height}}</h2>
+            </div>
+            <h2 class="myTeam_type machop"> {{mac.types[0].type.name}}</h2>
+            <h2> {{mac.types[1]?.type.name}}</h2>
+        </div>
     </div>
 </div>
+<app-footer></app-footer>
