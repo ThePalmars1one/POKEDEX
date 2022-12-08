@@ -1,0 +1,106 @@
+.menu_button {
+  background: #3B5DA8;
+  border: none;
+}
+
+.menu_icon {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.electric {
+  background: #F3F802;
+}
+
+.normal {
+  background: #36EFE4;
+}
+
+.fire {
+  background: #F9620D;
+}
+
+.water {
+  background: #366AEF;
+}
+
+.ice {
+  background: #98D8D8;
+}
+
+.rock {
+  background: #85752E;
+}
+
+.fairy {
+  background: #DA3CDD;
+}
+
+.flying {
+  background: #D587FA;
+}
+
+.grass {
+  background: #78C850;
+}
+
+.psychic {
+  background: #F85888;
+}
+
+.ghost {
+  background: #4F2861;
+}
+
+.bug {
+  background: #05CA77;
+}
+
+.poison {
+  background: #CAEF36;
+}
+
+.ground {
+  background: #EFBB36;
+}
+
+.dragon {
+  background: #8736EF;
+}
+
+.steel {
+  background: #807870;
+}
+
+.fighting {
+  background: #C03028;
+}
+
+.dark {
+  background: #252424;
+}
+
+.menu_types {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "Pokemon X and Y";
+}
+
+.menu_types h2 {
+  text-align: center;
+  padding: 5px 5px;
+  margin-bottom: 1rem;
+  width: 120px;
+}
+
+.menu_types h2:hover {
+  border: 1px solid black;
+}/*# sourceMappingURL=menu.component.css.map */

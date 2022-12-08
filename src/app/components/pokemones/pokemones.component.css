@@ -1,37 +1,85 @@
-.poke-card {
-    display: flex;
-    justify-content: center;
-    height: fit-content;
-    font-family: 'Roboto Mono', monospace;
-    max-width: 300px;
-    border-radius: 4px;
-    color: #000;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    background-color: #FFF;
-    border: 1px solid black;
+.poke_form {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.poke-card::before {
-    content: '';
-    background-size: 3px 3px;
-    border-radius: 4px;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    z-index: -1;
+.poke_form input {
+  border-radius: 20px;
+  width: 280px;
+  height: 45px;
+  text-align: center;
+  font-family: "Gamer";
+  font-size: 24pt;
+  text-transform: uppercase;
 }
 
-.img-container {
-    position: relative;
-    width: 180px;
-    margin: 10px auto;
+.poke_form button {
+  margin-left: 1rem;
+  border-radius: 20px;
+  background: #EF4036;
+  padding: 5px 5px;
+  font-family: "Gamer";
+  font-size: 24pt;
+  border: none;
+  cursor: pointer;
 }
 
-.poke-img {
-    width: 180px;
-    border-radius: 50%;
+.poke_form button:hover {
+  background: #e9180d;
+  color: white;
 }
+
+.poke_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  width: 350px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.poke_img {
+  width: 190px;
+  height: 190px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.poke_id, .poke_stats {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Pokemon X and Y";
+  letter-spacing: 3px;
+  font-size: 12pt;
+}
+
+.poke_types {
+  color: white;
+  margin-top: 2rem;
+}
+
+.poke_stats img {
+  display: none;
+}
+
+.poke_weight {
+  display: flex;
+  align-items: center;
+}
+.poke_weight img {
+  margin-right: 0.5rem;
+}
+
+.poke_height {
+  display: flex;
+  align-items: center;
+}
+.poke_height img {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=pokemones.component.css.map */
