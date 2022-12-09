@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Pokemon X and Y";
-  src: url("//db.onlinewebfonts.com/t/839d790091033048e568de0abe869f2b.eot");
+  src: url("/db.onlinewebfonts.com/t/839d790091033048e568de0abe869f2b.eot");
 }
 .home_container {
   display: flex;
@@ -25,6 +25,11 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
   border-radius: 20px;
+}
+
+.home_buttons:hover {
+  background: #e72015;
+  color: white;
 }
 
 .home_buttons img {
