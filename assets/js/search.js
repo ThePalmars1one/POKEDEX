@@ -70,7 +70,7 @@ const renderPokemonTypes = types => {
 
 const renderNotFound = () => {
     pokeName.textContent = 'No encontrado';
-    pokeImg.setAttribute('src', 'assets/img/pokeball.png');
+    pokeImg.setAttribute('src', './assets/img/pokeball.png');
     pokeImg.style.background =  '#fff';
     pokeTypes.innerHTML = '';
     pokeStats.innerHTML = '';
